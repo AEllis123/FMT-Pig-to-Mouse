@@ -1,0 +1,63 @@
+#!/bin/sh -l
+
+#SBATCH --nodes=1                   
+#SBATCH -n 20                        
+#SBATCH --time=10:00:00              
+#SBATCH --job-name Cecal_Taxa
+#SBATCH -A microbiome
+
+echo "Start time"
+date +"%d %B %Y %H:%M:%S"
+
+cd $RCAC_SCRATCH
+cd ANSC516_MouseData/Cecal
+
+pwd
+
+echo "loading bioinfo"
+module load bioinfo
+
+echo "loading qiime2-2023.9"
+module load Qiime/2-2023.9
+
+echo "initiating qiime2 taxonomy pipeline"
+
+echo "Make a stacked barplot"
+qiime taxa barplot \
+  --i-table cecal-filtered-table.qza \
+  --i-taxonomy taxonomy.qza \
+  --m-metadata-file updated-metadata-gnoto.txt \
+  --o-visualization cecal-taxa-bar-plots.qzv
+
+echo "Ancom"
+qiime composition add-pseudocount \
+  --i-table cecal-filtered-table.qza \
+  --o-composition-table comp-cecal-table.qza
+
+qiime composition ancom \
+  --i-table comp-cecal-table.qza \
+  --m-metadata-file updated-metadata-gnoto.txt \
+  --m-metadata-column donor_type \
+  --o-visualization ancom-cecal-donor-type.qzv
+
+echo "Collapse levels and ancom again."
+
+qiime taxa collapse \
+  --i-table cecal-filtered-table.qza \
+  --i-taxonomy taxonomy.qza \
+  --p-level 6 \
+  --o-collapsed-table cecal-table-l6.qza
+
+qiime composition add-pseudocount \
+  --i-table cecal-table-l6.qza \
+  --o-composition-table comp-cecal-table-l6.qza
+
+qiime composition ancom \
+  --i-table comp-cecal-table-l6.qza \
+  --m-metadata-file updated-metadata-gnoto.txt \
+  --m-metadata-column donor_type \
+  --o-visualization l6-ancom-cecal-donor.qzv
+
+echo "End time"
+date +"%d %B %Y %H:%M:%S"
+
