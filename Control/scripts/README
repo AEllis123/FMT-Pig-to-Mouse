@@ -1,3 +1,3 @@
-The control scripts used to run qiime analysis after data import and alpha rarefaction steps. Those initial steps can be found in Data_Import. These include the control samples filtered from the original outputs to focus on the control samples for analysis. Outputs can be found in the directory prior to this one and the control-core-metrics-results. 
+The control scripts used to run qiime analysis after data import and alpha rarefaction steps. Those initial steps can be found in Data_Import. These include the control samples filtered from the original outputs to focus on the control samples for analysis. Alpha and beta diversity results can be found in the control-core-metrics-results in the directory prior to this one. Taxonomy results can be found in the previous directory. 
 
 
