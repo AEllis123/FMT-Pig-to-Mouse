@@ -1,0 +1,4 @@
+This project focused on fecal microbiota transplants (FMT) from sows (n=3) and piglets (n=3) to germ free mice (n=24). Fecal samples were collected from the pigs while fecal and cecal samples were collected from the mice. Data from the importing to qiime2 step can be found in Data_Import. Data was then filtered based on if it was fecal, cecal, or a control. Each directory contains the job submission files and job outputs for that particular sample type. 
+The Control directory contains the controls for this experiment. These consisted of water, NC, and mock communities. 
+The Cecal directory contains the cecal samples for the experiment. No cecal samples were collected from the donors so this set is mice only.
+The fecal directory contains the fecal samples for the experiment. Donor fecal samples were also included in the fecal section.
