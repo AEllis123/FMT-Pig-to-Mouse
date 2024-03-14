@@ -1,0 +1,1 @@
+This directory contains the job submission files used to import the data into qiime2, perform an alpha rarefaction, and filter samples based on whether they were a control, cecal sample, or fecal sample. Outputs can be found in the previous directory.
