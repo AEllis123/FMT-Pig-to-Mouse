@@ -1,6 +1,6 @@
 The fecal sample scripts used for qiime analysis and the outputs obtained from them can be found in this directory.
 
-This directory also contains the samples collected, the manifest file, and metadata files. 
+This directory also contains the samples collected, the manifest file, metadata file, and taxonomy outputs from the Slurm-TaxaFecal job submmision script. 
 
 Alpha and Beta diversity outputs from qiime can be found in the fecal-core-metrics-output.
 
