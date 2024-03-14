@@ -1,5 +1,3 @@
-The fecal scripts used to run qiime analysis after data import and alpha rarefaction steps. Those initial steps can be found in Data_Import. 
-These include the fecal samples filtered from the original outputs to focus on the fecal samples for analysis. 
-Outputs can be found in the directory prior to this one. 
+The cecal scripts used to run qiime analysis after data import and alpha rarefaction steps. Those initial steps can be found in Data_Import. These include the cecal samples filtered from the original outputs to focus on the cecal samples for analysis. Taxonomy outputs can be found in the directory prior to this one. Alpha and beta diversity outputs can be found in the cecal-core-metrics-results in the Cecal directory.
 
 
