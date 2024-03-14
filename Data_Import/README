@@ -1,2 +1,1 @@
-Outputs from the data import to qiime2, alpha rarefaction, and filtering steps. Samples were filtered based on whether they were a control, cecal sample, or fecal sample. 
-Outputs needed for future qiime2 steps were copied as needed into the Control, Cecal, and Fecal directories. 
+Outputs from the data import to qiime2, alpha rarefaction, and filtering steps. Samples were filtered based on whether they were a control, cecal sample, or fecal sample. Outputs needed for future qiime2 steps were copied as needed into the Control, Cecal, and Fecal directories. 
