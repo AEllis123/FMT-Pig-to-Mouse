@@ -1,0 +1,5 @@
+The fecal scripts used to run qiime analysis after data import and alpha rarefaction steps. Those initial steps can be found in Data_Import. 
+These include the fecal samples filtered from the original outputs to focus on the fecal samples for analysis. 
+Outputs can be found in the directory prior to this one. 
+
+
