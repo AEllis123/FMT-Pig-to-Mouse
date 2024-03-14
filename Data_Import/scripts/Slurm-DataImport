@@ -1,0 +1,78 @@
+#!/bin/sh -l
+
+#SBATCH --nodes=1                    ##number of requested nodes (a node is a group of CPUs)
+#SBATCH -n 20                        ##number of requested CPUs
+#SBATCH --time=04:00:00              ##time requested
+#SBATCH --job-name Mouse_Import      ##name of job
+#SBATCH -A microbiome                ##name of the queue you are using. Could be scholar or microbiome if you are on snyder
+
+#########################################################################
+
+echo "Start time"
+date +"%d %B %Y %H:%M:%S"
+
+#step 1, cd into the proper directory. This directory must already exist
+
+cd $RCAC_SCRATCH
+cd ANSC516_MouseData/Data_Import
+
+pwd
+
+#step 2, Load Modules
+
+echo "loading bioinfo"
+module load bioinfo
+
+echo "loading qiime2-2023.9"
+module load Qiime/2-2023.9
+
+#step 3, Run the code you want
+
+echo "initiating qiime2 mouse import"
+
+echo "Data Import"
+#Make the sequences into a qiime recognizable format
+
+qiime tools import \
+  --type 'SampleData[PairedEndSequencesWithQuality]' \
+  --input-path manifest-notab.txt \
+  --output-path paired-end-demux.qza \
+  --input-format PairedEndFastqManifestPhred33V2
+
+qiime demux summarize \
+  --i-data paired-end-demux.qza \
+  --o-visualization paired-end-demux.qzv
+
+##De-noise. Error corrections.
+
+echo "dada2"
+
+qiime dada2 denoise-paired \
+  --i-demultiplexed-seqs paired-end-demux.qza \
+  --p-trim-left-f 13 \
+  --p-trim-left-r 6 \
+  --p-trunc-len-f 250 \
+  --p-trunc-len-r 137 \
+  --o-representative-sequences rep-seqs.qza \
+  --o-table table.qza \
+  --o-denoising-stats stats-dada2.qza
+
+#Convert .qza to .qzv format
+
+qiime metadata tabulate \
+  --m-input-file stats-dada2.qza \
+  --o-visualization stats-dada2.qzv
+
+
+#Create a .qzv from the output of denoise
+qiime feature-table summarize \
+  --i-table table.qza \
+  --o-visualization table.qzv \
+  --m-sample-metadata-file updated-metadata-gnoto.txt
+
+qiime feature-table tabulate-seqs \
+  --i-data rep-seqs.qza \
+  --o-visualization rep-seqs.qzv
+
+echo "End time"
+date +"%d %B %Y %H:%M:%S"
