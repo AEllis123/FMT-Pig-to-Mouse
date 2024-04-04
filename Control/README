@@ -1,8 +1,6 @@
 The control sample scripts used for qiime analysis can be found in this directory.
 This directory also contains the metadata file. 
 
-Alpha and Beta diversity outputs from qiime can be found in the control-core-metrics-output.
-
-Outputs needed from the data import steps needed for analysis were copied here from the Data_Import directory. 
+Outputs needed from the data import steps for analysis were copied here from the Data_Import directory. 
 
 Control samples include positive (mock communities) and negative (NC and water) controls. 
