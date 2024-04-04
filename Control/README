@@ -1,6 +1,5 @@
-The control sample scripts used for qiime analysis and the outputs obtained from them can be found in this directory.
-
-This directory also contains the samples collected, the manifest file, metadata file, and taxonomy outputs from the Slurm-TaxaControl job submission file. 
+The control sample scripts used for qiime analysis can be found in this directory.
+This directory also contains the metadata file. 
 
 Alpha and Beta diversity outputs from qiime can be found in the control-core-metrics-output.
 
