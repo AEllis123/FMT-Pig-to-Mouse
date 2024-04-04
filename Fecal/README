@@ -1,4 +1,4 @@
 The fecal sample scripts used for qiime analysis can be found in this directory.
 This directory also contains the metadata file. 
 
-Outputs needed from the data import steps needed for analysis were copied here from the Data_Import directory. 
+Outputs needed from the data import steps for analysis were copied here from the Data_Import directory. 
