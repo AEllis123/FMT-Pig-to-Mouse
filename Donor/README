@@ -1,7 +1,4 @@
-The donor sample scripts used for qiime analysis and the outputs obtained from them can be found in this directory.
+The donor sample scripts used for qiime analysis can be found in this directory.
+This directory also contains the metadata file. 
 
-This directory also contains the samples collected, the manifest file, metadata file, and taxonomy outputs from the Slurm-TaxaDonor job submission script. 
-
-Alpha and Beta diversity outputs from qiime can be found in the donor-core-metrics-output.
-
-Outputs needed from the data import steps needed for analysis were copied here from the Data_Import directory. 
+Outputs needed from the data import steps for analysis were copied here from the Data_Import directory. 
