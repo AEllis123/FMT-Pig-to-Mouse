@@ -51,7 +51,6 @@ qiime diversity alpha-rarefaction \
   --m-metadata-file replicate-metadata-gnoto.txt \
   --o-visualization fecal-alpha-rarefaction.qzv
 
-#Need to alter p-max-depth
 qiime diversity alpha-rarefaction \
   --i-table donor-filtered-table.qza \
   --i-phylogeny rooted-tree.qza \
