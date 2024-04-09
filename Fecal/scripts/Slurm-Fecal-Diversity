@@ -26,7 +26,7 @@ echo "initiating qiime2 diversity pipeline"
 qiime diversity core-metrics-phylogenetic \
   --i-phylogeny rooted-tree.qza \
   --i-table fecal-filtered-table.qza \
-  --p-sampling-depth 9424 \
+  --p-sampling-depth 8903 \
   --m-metadata-file replicate-metadata-gnoto.txt \
   --output-dir fecal-core-metrics-results
 
