@@ -1,0 +1,62 @@
+sample-id	sample-type	Mouse_ID	Sex	Parents	Cage_ID	donor	Gavage_weeks	Sac_weeks	Sac_grams	Empty_Bead_Tube_grams	donor_type	replicate	for_filtering
+#q2:types	categorical	categorical	categorical	categorical	numeric	categorical	numeric	numeric	numeric	numeric	categorical	numeric	categorical 
+CeC1S1R01	cecal	M01	M	D34M/D35F	21476	Sow1	6.3	8.1	25.5	3.0868	Sow	1	cecal
+CeC1S1R02	cecal	M02	M	D34M/D35F	21476	Sow1	6.3	8.1	23.3	3.1009	Sow	1	cecal
+CeC1P3R03	cecal	M03	M	D36M/D37F	21478	Piglet3	5.6	7.4	23.4	3.0539	Piglet	3	cecal
+CeC1P3R04	cecal	M04	M	D36M/D37F	21478	Piglet3	5.6	7.4	23.8	3.103	Piglet	3	cecal
+CeC1S3R05	cecal	M05	M	D40M/D41F	21480	Sow3	5.4	7.3	23.1	3.092	Sow	3	cecal
+CeC1S3R06	cecal	M06	M	D40M/D41F	21480	Sow3	5.4	7.3	23.7	2.9593	Sow	3	cecal
+CeC1P2R07	cecal	M07	M	D40M/D41F	82768	Piglet2	5.4	7.3	23.8	3.0938	Piglet	2	cecal
+CeC1P2R08	cecal	M08	M	E36M/E37F	82768	Piglet2	4.3	6.1	23.9	3.0516	Piglet	2	cecal
+CeC1S2R09	cecal	M09	M	E36M/E37F	21255	Sow2	4.3	6.1	20.3	3.0417	Sow	2	cecal
+CeC1S2R10	cecal	M10	M	E36M/E37F	21255	Sow2	4.3	6.1	22.6	3.0973	Sow	2	cecal
+CeC1P1R11	cecal	M11	M	E36M/E37F	82769	Piglet1	4.3	6.1	23.3	3.051	Piglet	1	cecal
+CeC1P1R12	cecal	M12	M	E36M/E37F	82769	Piglet1	4.3	6.1	22.7	3.1241	Piglet	1	cecal
+CeC2S1R13	cecal	M13	M	E38M/E39F	21472	Sow1	6.4	8.3	25.4	3.0967	Sow	1	cecal
+CeC2S1R14	cecal	M14	M	E38M/E39F	21472	Sow1	6.4	8.3	25.6	3.0899	Sow	1	cecal
+CeC2P3R15	cecal	M15	M	E38M/E39F	82754	Piglet3	6.4	8.3	23.1	3.0724	Piglet	3	cecal
+CeC2P3R16	cecal	M16	M	E42M/E43F	82754	Piglet3	4.6	6.4	21.8	3.0627	Piglet	3	cecal
+CeC2S3R17	cecal	M17	M	E42M/E43F	21250	Sow3	4.6	6.4	20.9	3.0845	Sow	3	cecal
+CeC2S3R18	cecal	M18	M	E42M/E43F	21250	Sow3	4.6	6.4	21.6	3.0909	Sow	3	cecal
+CeC2P2R19	cecal	M19	M	E40M/E41F	21252	Piglet2	4.6	6.4	22.8	2.9202	Piglet	2	cecal
+CeC2P2R20	cecal	M20	M	E40M/E41F	21252	Piglet2	4.6	6.4	21.5	3.0823	Piglet	2	cecal
+CeC2S2R21	cecal	M21	M	G30M/G31F	21470	Sow2	6.7	8.6	24.4	3.077	Sow	2	cecal
+CeC2S2R22	cecal	M22	M	G32M/G33F	21470	Sow2	6.3	8.1	22.2	3.0601	Sow	2	cecal
+CeC2P1R23	cecal	M23	M	G32M/G33F	21473	Piglet1	6.3	8.1	26.1	3.0978	Piglet	1	cecal
+CeC2P1R24	cecal	M24	M	G32M/G33F	21473	Piglet1	6.3	8.1	23.4	3.0696	Piglet	1	cecal
+FeC1S1R01	fecal	M01	M	D34M/D35F	21476	Sow1	6.3	8.1	25.5	3.0868	Sow	1	fecal
+FeC1S1R02	fecal	M02	M	D34M/D35F	21476	Sow1	6.3	8.1	23.3	3.1009	Sow	1	fecal
+FeC1P3R03	fecal	M03	M	D36M/D37F	21478	Piglet3	5.6	7.4	23.4	3.0539	Piglet	3	fecal
+FeC1P3R04	fecal	M04	M	D36M/D37F	21478	Piglet3	5.6	7.4	23.8	3.103	Piglet	3	fecal
+FeC1S3R05	fecal	M05	M	D40M/D41F	21480	Sow3	5.4	7.3	23.1	3.092	Sow	3	fecal
+FeC1S3R06	fecal	M06	M	D40M/D41F	21480	Sow3	5.4	7.3	23.7	2.9593	Sow	3	fecal
+FeC1P2R07	fecal	M07	M	D40M/D41F	82768	Piglet2	5.4	7.3	23.8	3.0938	Piglet	2	fecal
+FeC1P2R08	fecal	M08	M	E36M/E37F	82768	Piglet2	4.3	6.1	23.9	3.0516	Piglet	2	fecal
+FeC1S2R09	fecal	M09	M	E36M/E37F	21255	Sow2	4.3	6.1	20.3	3.0417	Sow	2	fecal
+FeC1S2R10	fecal	M10	M	E36M/E37F	21255	Sow2	4.3	6.1	22.6	3.0973	Sow	2	fecal
+FeC1P1R11	fecal	M11	M	E36M/E37F	82769	Piglet1	4.3	6.1	23.3	3.051	Piglet	1	fecal
+FeC1P1R12	fecal	M12	M	E36M/E37F	82769	Piglet1	4.3	6.1	22.7	3.1241	Piglet	1	fecal
+FeC2S1R13	fecal	M13	M	E38M/E39F	21472	Sow1	6.4	8.3	25.4	3.0967	Sow	1	fecal
+FeC2S1R14	fecal	M14	M	E38M/E39F	21472	Sow1	6.4	8.3	25.6	3.0899	Sow	1	fecal
+FeC2P3R15	fecal	M15	M	E38M/E39F	82754	Piglet3	6.4	8.3	23.1	3.0724	Piglet	3	fecal
+FeC2P3R16	fecal	M16	M	E42M/E43F	82754	Piglet3	4.6	6.4	21.8	3.0627	Piglet	3	fecal
+FeC2S3R17	fecal	M17	M	E42M/E43F	21250	Sow3	4.6	6.4	20.9	3.0845	Sow	3	fecal
+FeC2S3R18	fecal	M18	M	E42M/E43F	21250	Sow3	4.6	6.4	21.6	3.0909	Sow	3	fecal
+FeC2P2R19	fecal	M19	M	E40M/E41F	21252	Piglet2	4.6	6.4	22.8	2.9202	Piglet	2	fecal
+FeC2P2R20	fecal	M20	M	E40M/E41F	21252	Piglet2	4.6	6.4	21.5	3.0823	Piglet	2	fecal
+FeC2S2R21	fecal	M21	M	G30M/G31F	21470	Sow2	6.7	8.6	24.4	3.077	Sow	2	fecal
+FeC2S2R22	fecal	M22	M	G32M/G33F	21470	Sow2	6.3	8.1	22.2	3.0601	Sow	2	fecal
+FeC2P1R23	fecal	M23	M	G32M/G33F	21473	Piglet1	6.3	8.1	26.1	3.0978	Piglet	1	fecal
+FeC2P1R24	fecal	M24	M	G32M/G33F	21473	Piglet1	6.3	8.1	23.4	3.0696	Piglet	1	fecal
+S1	fecal					donor-S1					donor-sow	1	donor-fecal
+S2	fecal					donor-S2					donor-sow	2	donor-fecal
+S3	fecal					donor-S3					donor-sow	3	donor-fecal
+P1	fecal					donor-P1					donor-piglet	1	donor-fecal
+P2	fecal					donor-P2					donor-piglet	2	donor-fecal
+P3	fecal					donor-P3					donor-piglet	3	donor-fecal
+NC1	Control					control					control	4	Control
+NC2	Control					control					control	4	Control
+NC3	Control					control					control	4	Control
+mock1	Control					control					control	4	Control
+mock2	Control					control					control	4	Control
+water	Control					control					control	4	Control
