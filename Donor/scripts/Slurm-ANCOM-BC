@@ -1,0 +1,55 @@
+#!/bin/sh -l
+
+#SBATCH --nodes=1                   
+#SBATCH -n 20                        
+#SBATCH --time=10:00:00              
+#SBATCH --job-name ANCOM-BC       
+#SBATCH -A microbiome
+
+echo "Start time"
+date +"%d %B %Y %H:%M:%S"
+
+cd $RCAC_SCRATCH
+cd ANSC516_MouseData/Donor
+
+pwd
+
+echo "loading bioinfo"
+module load bioinfo
+
+echo "loading qiime2-2024.2"
+module load Qiime/2-2024.2
+
+echo "initiating qiime2 ancom-BC pipeline"
+
+qiime composition ancombc \
+  --i-table donor-filtered-table.qza \
+  --m-metadata-file replicate-metadata-gnoto.txt \
+  --p-formula 'donor_type' \
+  --o-differentials ancombc-donor.qza
+
+qiime composition da-barplot \
+  --i-data ancombc-donor.qza \
+  --p-significance-threshold 0.001 \
+  --o-visualization da-barplot-donor.qzv
+
+qiime taxa collapse \
+  --i-table donor-filtered-table.qza \
+  --i-taxonomy taxonomy.qza \
+  --p-level 6 \
+  --o-collapsed-table donor-table-l6.qza
+
+qiime composition ancombc \
+  --i-table donor-table-l6.qza \
+  --m-metadata-file replicate-metadata-gnoto.txt \
+  --p-formula 'donor_type' \
+  --o-differentials l6-ancombc-donor.qza
+
+qiime composition da-barplot \
+  --i-data l6-ancombc-donor.qza \
+  --p-significance-threshold 0.001 \
+  --p-level-delimiter ';' \
+  --o-visualization l6-da-barplot-donor.qzv
+
+echo "End time"
+date +"%d %B %Y %H:%M:%S"
