@@ -136,7 +136,7 @@ rownames(bc_dm) == metadata_sub$SampleID ## all these values need to be "TRUE"
 
 BC_PERMANOVA_out <- adonis2(bc_dm ~ donor.type, data = metadata_sub)
 
-write.table(PERMANOVA_out,"output/bray_curtis_donor.type_Adonis_overall.csv",sep=",", row.names = TRUE) 
+write.table(BC_PERMANOVA_out,"output/bray_curtis_donor.type_Adonis_overall.csv",sep=",", row.names = TRUE) 
 
 
 ################### Unweighted UniFrac ######################
